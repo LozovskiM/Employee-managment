@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>employee managment</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    
+    <div id="page_container">
+        
+        <h1>СОТРУДНИКИ</h1>
+
+          <div id="div_message"></div>
+
+          <div class="flex_container">
+
+            <div id="result_name">
+              <h2>Найти сотрудника по имени: </h2>
+              <input type="text" id="input_name">
+              <button id="button_name">ПОИСК ПО ИМЕНИ</button>
+              <ul id="list_result_name"></ul>
+            </div>
+
+            <div id="result_surname">
+              <h2>Найти сотрудника по фамилии: </h2>
+              <input type="text" id="input_surname">
+              <button id="button_surname">ПОИСК ПО ФАМИЛИИ</button>
+              <ul id="list_result_surname"></ul>
+            </div>
+
+            <div id="result_salary">
+              <h2>Найти сотрудников, которые зарабатывают минимум: </h2>
+              <input type="text" id="input_salary">
+              <button id="button_salary">ПОИСК ПО ЗАРАБОТКУ</button>
+              <ul id="list_result_salary"></ul>
+            </div>
+
+        </div>
+
+        <div class="flex_container">
+
+            <div id="add_employee">
+              <h2>Добавить сотрудника<span id="small_star">*</span></h2>
+
+              <input type="text" id="input_add_name" placeholder="имя">
+              <input type="text" id="input_add_surname" placeholder="фамилия">
+              <input type="text" id="input_add_salary" placeholder="заработок">
+
+              <button id="button_add">ДОБАВИТЬ</button>
+
+              <p><span id="small_star">*</span> данные будут доступны только до обновления и перезагрузки страницы</p>
+            </div>
+
+            <div id="result_all">
+              <button id="button_all">ПОСМОТРЕТЬ ВСЕХ СОТРУДНИКОВ</button>
+              <ul id="list_result_all"></ul>
+            </div>
+
+        </div>
+
+</div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
